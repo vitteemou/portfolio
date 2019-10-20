@@ -1,0 +1,322 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #131313;
+}
+.header > * {
+  display: inline-block;
+}
+
+.heading--first_level {
+  font-size: 14px;
+  color: #E3B873;
+}
+
+.menu--list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu--list .menu--list_item {
+  margin-right: 15px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.menu--list .menu--list_item-selected {
+  color: #E3B873;
+}
+
+.phone--link {
+  color: #E3B873;
+  text-decoration: underline;
+}
+
+.section--first_screen,
+.section--projects {
+  color: #FFFFFF;
+  background-color: #131313;
+}
+
+.section--online_control,
+.section--repair_types,
+.section--work_stages {
+  color: #131313;
+  background-color: #FFFFFF;
+}
+
+.btn {
+  width: 207px;
+  height: 51px;
+  border: 1px solid #FFFFFF;
+  border-radius: 2px;
+  text-transform: uppercase;
+  background: transparent;
+  color: #FFFFFF;
+}
+
+.btn-active {
+  border: 0;
+  color: #FFFFFF;
+  background-color: #E3B873;
+}
+
+.btn-compact {
+  width: 161px;
+  height: 37px;
+}
+
+@media only screen and (max-width: 375px) {
+  .header .btn {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  nav {
+    display: none;
+  }
+}
+
+.section--first_screen {
+  position: relative;
+  z-index: -10;
+  height: 800px;
+  font-size: 22px;
+}
+@media only screen and (max-width: 375px) {
+  .section--first_screen .first_screen--content * {
+    width: 100%;
+  }
+}
+.section--first_screen .first_screen--background {
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+  height: 707px;
+  background-image: url("../assets/images/first-screen.png");
+  background-repeat: no-repeat;
+  filter: brightness(0.3);
+}
+.section--first_screen .first_screen--text {
+  width: 504px;
+}
+
+.heading--second_level {
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.heading--second_level-major {
+  width: 156px;
+  font-size: 27px;
+  color: #E3B873;
+}
+
+.heading--second_level-minor {
+  margin: auto;
+  font-size: 20px;
+}
+
+.heading--second_level-first_screen {
+  width: 530px;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+.secondary_heading--text-highlighted {
+  color: #E3B873;
+}
+
+.section--projects .projects--background {
+  position: absolute;
+  width: 100%;
+  height: 1074px;
+  background-color: #131313;
+}
+.section--projects .menu--list_item {
+  opacity: 0.3;
+}
+.section--projects .menu--list_item-selected {
+  opacity: 1;
+  text-decoration: underline;
+}
+.section--projects .projects--content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section--projects .projects--text-container {
+  font-size: 18px;
+}
+.section--projects .projects--text {
+  width: 442px;
+  margin-bottom: 19px;
+}
+.section--projects .heading--second_level-major {
+  margin-bottom: 34px;
+  color: #E3B873;
+}
+.section--projects .heading--third_level {
+  margin-bottom: 9px;
+  color: #E3B873;
+}
+
+.details_list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-template-rows: auto auto;
+}
+.details_list .details_list_item--text {
+  width: 161px;
+  margin-bottom: 34px;
+}
+
+.heading--third_level {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.gallery--photo {
+  width: 679px;
+  height: auto;
+}
+
+.online_control--background {
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+  height: 300px;
+  background-color: #131313;
+}
+.online_control--content * {
+  margin: auto;
+  text-align: center;
+}
+.online_control--video_container {
+  margin: 0 auto;
+}
+.online_control--description {
+  width: 681px;
+}
+.online_control--form_first_layer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.online_control--form_second_layer {
+  margin: auto;
+}
+
+.repair_types {
+  margin-bottom: 124px;
+}
+.repair_types .heading--second_level {
+  color: #131313;
+  text-align: center;
+}
+.repair_types .heading_icon {
+  margin: auto;
+  text-align: center;
+}
+
+.cards--list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.work_stages label {
+  display: block;
+}
+.work_stages--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.work_stages--list_container {
+  width: 800px;
+  height: 645px;
+  background-image: url("../assets/images/work-stages.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.work_stages--list_item {
+  margin-bottom: 150px;
+}
+.work_stages--fieldset {
+  border: 0;
+  color: #FFFFFF;
+}
+.work_stages--form_heading {
+  margin-bottom: 39px;
+  text-align: center;
+}
+.work_stages--form_container {
+  padding: 27px 25px;
+  background-color: #131313;
+}
+.work_stages--form_field {
+  margin-bottom: 48px;
+}
+
+.repair_styles {
+  display: flex;
+  background-image: url("../assets/images/styles-background.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.repair_styles .heading--second_level {
+  width: 300px;
+  padding-top: 137px;
+  margin-left: 99px;
+}
+.repair_styles--list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 299px;
+  margin-top: 47px;
+  margin-bottom: 97px;
+  margin-left: 99px;
+}
+.repair_styles--list_item {
+  margin-bottom: 25px;
+  color: #FFFFFF;
+}
+.repair_styles--list_item-selected {
+  color: #E3B873;
+}
+.repair_styles--link {
+  text-decoration: none;
+  color: inherit;
+}
+.repair_styles--list_item-selected .repair_styles--link {
+  text-decoration: underline;
+}
+.repair_styles--gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.repair_styles--gallery_item {
+  margin-bottom: 40px;
+  margin-right: 40px;
+  flex-basis: content;
+}
+
+/*# sourceMappingURL=style.css.map */
