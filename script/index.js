@@ -8,6 +8,20 @@
   let rightArrow = document.querySelector('.slider--arrow-right');
   rightArrow.addEventListener('click', showNext);
 
+  let descButtonMobileList = document.querySelectorAll('.slider_item--button-mobile');
+  descButtonMobileList.forEach(button => button.addEventListener('click', toggleDescriptionPopup));
+
+
+  function toggleDescriptionPopup() {
+    let popup = document.querySelector('.slider_item-active .slider_item--popup');
+    popup.classList.toggle('slider_item--popup-hidden');
+  }
+
+  function hideDescriptionPopup() {
+    let popup = document.querySelector('.slider_item-active .slider_item--popup');
+    popup.classList.add('slider_item--popup-hidden');
+  }
+
   function showPrevious() {
     showNext();
   }
