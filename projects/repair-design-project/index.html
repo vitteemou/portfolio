@@ -7,48 +7,52 @@
   </head>
   <body>
     <header class="header">
-      <div class="logo">
-        <h1 class="heading--first_level">
-          IC "Repair Design Project"
-        </h1>
+      <div class="header--container">
+
+        <div class="logo">
+          <h1 class="heading--first_level">
+            IC "Repair Design Project"
+          </h1>
+        </div>
+  
+        <nav class="menu">
+          <ul class="menu--list">
+            <li class="menu--list_item menu--list_item-selected" >
+              Home
+            </li>
+            <li class="menu--list_item">
+              Projects
+            </li>
+            <li class="menu--list_item">
+              Measurement
+            </li>
+            <li class="menu--list_item">
+              Team
+            </li>
+            <li class="menu--list_item">
+              Reviews
+            </li>
+            <li class="menu--list_item">
+              Contacts
+            </li>
+          </ul>
+        </nav>
+  
+        <div class="phone">
+          <a class="phone--link" href="tel:+79287683239">
+            +7 (928) 768-32-39
+          </a>
+        </div>
+  
+        <button class="btn btn-active btn-compact">
+          Request a Call
+        </button>
+
       </div>
-
-      <nav class="menu">
-        <ul class="menu--list">
-          <li class="menu--list_item menu--list_item-selected" >
-            Home
-          </li>
-          <li class="menu--list_item">
-            Projects
-          </li>
-          <li class="menu--list_item">
-            Measurement
-          </li>
-          <li class="menu--list_item">
-            Team
-          </li>
-          <li class="menu--list_item">
-            Reviews
-          </li>
-          <li class="menu--list_item">
-            Contacts
-          </li>
-        </ul>
-      </nav>
-
-      <div class="phone">
-        <a class="phone--link" href="tel:+79287683239">
-          +7 (928) 768-32-39
-        </a>
-      </div>
-
-      <button class="btn btn-active btn-compact">
-        Request a Call
-      </button>
     </header>
 
     <main>
-      <section class="section section--first_screen">
+      <section class="section first_screen">
 
         <!--<aside>
           <div class="socials_link">
@@ -56,35 +60,38 @@
           </div>
         </aside>-->
 
-        <div class="first_screen--background"></div>
-
-        <div class="first_screen--content">
-
-          <h2 class="heading--second_level heading--second_level-first_screen">
-              Turnkey Repair in the city of <span class="secondary_heading--text-highlighted">Rostov-on-Don</span>
-          </h2>
-          <p class="first_screen--text">
-            Get ready-made turnkey repairs on time with work time saving up to 45 days and 20% from cost of materials due to the organization of work
-          </p>
-          <div class="btn_container">
-  
-            <button class="btn btn-active">
-              Calculate the Cost
-            </button>
-  
-            <button class="btn">
-              Submit your Application
-            </button>
-  
-          </div>
-  
-          <div class="">
-            Scroll Down
-          </div>
+        <div class="first_screen--background">
         </div>
+            <div class="first_screen--content">
+
+                <h2 class="heading--second_level heading--second_level-first_screen">
+                  Turnkey Repair in the city of <span class="secondary_heading--text-highlighted">Rostov-on-Don</span>
+                </h2>
+                <p class="first_screen--text">
+                  Get ready-made turnkey repairs on&nbsp;time with&nbsp;work time saving&nbsp;up&nbsp;to&nbsp;45&nbsp;days&nbsp;and&nbsp;20% from&nbsp;cost of&nbsp;materials due&nbsp;to the&nbsp;organization of&nbsp;work
+                </p>
+                <div class="btn_container">
+        
+                  <button class="btn btn-active">
+                    Calculate the Cost
+                  </button>
+        
+                  <button class="btn">
+                    Submit your Application
+                  </button>
+        
+                </div>
+        
+                <!--<div class="">
+                  Scroll Down
+                </div>-->
+              </div>
+        
+
+       
       </section>
 
-      <section class="section section--projects">
+      <section class="section projects">
         
         <nav class="menu projects--menu">
           <ul class="menu--list">
@@ -102,13 +109,13 @@
 
         <div class="projects--content">
           <div class="projects--text-container">
-            <h2 class="heading--second_level heading--second_level-major">
-              Completed projects
-            </h2>
-    
-            <p class="projects--text">
-              Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families
-            </p>
+              <h2 class="heading--second_level heading--second_level-major">
+                Completed projects
+              </h2>
+      
+              <p class="projects--text">
+                Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families
+              </p>
     
             <ul class="details_list">
     
@@ -193,16 +200,18 @@
         <div class="online_control--background"></div>
 
         <div class="online_control--content">
-          <h2 class="heading--second_level heading--second_level-minor">
-            Online control
-          </h2>
-  
-          <div class="heading_icon">
-            <img src="assets/images/online-icon.svg" alt="Online control">
+          <div class="heading_container">
+            <h2 class="heading--second_level heading--second_level-minor">
+              Online control
+            </h2>
+    
+            <div class="heading_icon">
+              <img src="assets/images/online-icon.svg" alt="Online control">
+            </div>
           </div>
   
           <div class="online_control--video_container">
-            <video class="online_control--video" poster="assets/images/video-poster.png">
+            <video class="online_control--video" style="object-fit: inherit" controls poster="assets/images/video-poster-shadowed.png">
               <source src="#">
             </video>
           </div>
@@ -213,34 +222,43 @@
           </p>
   
           <form class="online_control--form form">
-            <div class="online_control--form_first_layer">
-              <label for="name">Name</label>
-              <input class="form--text" id="name" name="name" placeholder="What is your name:">
+            <div class="form_first_layer">
+              <div class="form--field">
+                <label class="form--label" for="name">Name</label>
+                <input class="form--text" id="name" name="name" placeholder="What is your name:">
+              </div>
               
-              <label for="phone">Phone</label>
-              <input class="form--text" type="tel" id="phone" name="phone" placeholder="Your phone number:">
-    
+              <div class="form--field">
+                <label class="form--label" for="phone">Phone</label>
+                <input class="form--text" type="tel" id="phone" name="phone" placeholder="Your phone number:">
+              </div>
+
               <input class="form--btn btn btn-active" type="submit" id="submit" value="Submit">
             </div>
 
-            <div class="online_control--form_second_layer">
-              <label for="agree">I agree to the processing of personal data</label>
-              <input class="form--checkbox" type="checkbox" id="agree" name="agree" checked>
+            <div class="form_second_layer">
+              <div class="form--field">
+                <input class="form--checkbox" type="checkbox" id="agree" name="agree" checked>
+                <label class="form--label" for="agree">I agree to the processing of personal data</label>
+              </div>
             </div>
           </form>
         </div>
       </section>
 
       <section class="section repair_types">
-        <h2 class="heading--second_level heading--second_level-minor">
-          Types of repair
-        </h2>
 
-        <div class="heading_icon">
-          <img src="assets/images/tools.svg" alt="Types of repair">
+        <div class="heading_container">
+          <h2 class="heading--second_level heading--second_level-minor">
+            Types of repair
+          </h2>
+
+          <div class="heading_icon">
+            <img src="assets/images/tools.svg" alt="Types of repair">
+          </div>
         </div>
 
-        <div class="cards_container">
+        <div class="cards--container">
           <ul class="cards--list">
 
             <li class="cards--list_item">
@@ -383,7 +401,10 @@
 
         <div class="work_stages--container">
           <div class="work_stages--list_container">
-            <ul class="work_stages--list">
+            <div class="work_stages--circle">
+            </div>
+          </div>
+            <!--<ul class="work_stages--list">
     
               <li class="work_stages--list_item">
                 Our specialist will arrive for measurements per day contact, or appoint a date convenient for you
@@ -401,8 +422,8 @@
                 Get a cost estimate and the timing of your future repairs
               </li>
     
-            </ul>
-          </div>
+            </ul>-->
+          
 
           <div class="work_stages--form_container">
           <fieldset class="work_stages--fieldset">
@@ -457,67 +478,67 @@
         <ul class="repair_styles--list">
 
           <li class="repair_styles--list_item repair_styles--list_item-selected">
-            <a class="repair_styles--link">
+            <a href="#" class="repair_styles--link">
               American classic
             </a>
           </li>
 
           <li class="repair_styles--list_item">
-            <a class="repair_styles--link">
+            <a href="#" class="repair_styles--link">
               Empire
             </a>
           </li>
 
           <li class="repair_styles--list_item">
-            <a class="repair_styles--link">
+            <a href="#" class="repair_styles--link">
               Classical
             </a>
           </li>
   
           <li class="repair_styles--list_item">
-            <a class="repair_styles--link">
+            <a href="#" class="repair_styles--link">
               Loft
             </a>
           </li>
 
           <li class="repair_styles--list_item">
-            <a class="repair_styles--link">
+            <a href="#" class="repair_styles--link">
               Minimalism
             </a>
           </li>
   
           <li class="repair_styles--list_item">
-            <a class="repair_styles--link">
+            <a href="#" class="repair_styles--link">
               Provence
             </a>
           </li>
 
           <li class="repair_styles--list_item">
-            <a class="repair_styles--link">
+            <a href="#" class="repair_styles--link">
               Romanticism
             </a>
           </li>
   
           <li class="repair_styles--list_item">
-            <a class="repair_styles--link">
+            <a href="#" class="repair_styles--link">
               Scandinavian style
             </a>
           </li>
 
           <li class="repair_styles--list_item repair_styles--list_item-active">
-            <a class="repair_styles--link">
+            <a href="#" class="repair_styles--link">
               Mediterranean style
             </a>
           </li>
     
           <li class="repair_styles--list_item">
-            <a class="repair_styles--link">
+            <a href="#" class="repair_styles--link">
               High tech
             </a>
           </li>
     
           <li class="repair_styles--list_item repair_styles--list_item-active">
-            <a class="repair_styles--link">
+            <a href="#" class="repair_styles--link">
               Eclecticism
             </a>
           </li>
@@ -526,38 +547,46 @@
       </div>
 
         <div class="repair_styles--gallery">
-          <div class="repair_styles--gallery_item">
-            <img src="assets/images/styles-1.png" alt="Picture 1">
+
+          <div class="repair_styles--gallery_column">
+            <div class="repair_styles--gallery_item">
+              <img src="assets/images/styles-1.png" alt="Picture 1">
+            </div>
+  
+            <div class="repair_styles--gallery_item">
+              <img src="assets/images/styles-2.png" alt="Picture 2">
+            </div>
           </div>
 
-          <div class="repair_styles--gallery_item">
-            <img src="assets/images/styles-2.png" alt="Picture 2">
+          <div class="repair_styles--gallery_column">
+            <div class="repair_styles--gallery_item">
+              <img src="assets/images/styles-3.png" alt="Picture 3">
+            </div>
+  
+            <div class="repair_styles--gallery_item">
+              <img src="assets/images/styles-4.png" alt="Picture 4">
+            </div>
           </div>
 
-          <div class="repair_styles--gallery_item">
-            <img src="assets/images/styles-3.png" alt="Picture 3">
-          </div>
-
-          <div class="repair_styles--gallery_item">
-            <img src="assets/images/styles-4.png" alt="Picture 4">
-          </div>
         </div>
       </section>
 
-      <section class="section section--design_project">
-        <h2 class="heading--second_level heading--second_level-minor">
-          Design project
-        </h2>
-
-        <div class="heading_icon">
-          <img src="" alt="Design project">
+      <section class="section design_project">
+        <div class="heading_container">
+          <h2 class="heading--second_level heading--second_level-minor">
+            Design project
+          </h2>
+  
+          <div class="heading_icon">
+            <img src="assets/images/design-icon.svg" alt="Design project">
+          </div>
         </div>
 
-        <p class="design_project--text">
+        <p class="design_project--description">
           Design project not only helps to make the repair of your apartment more modern, but also significantly reduces the cost of materials and reduces the time of repair work.
         </p>
 
-        <div class="cards_container">
+        <div class="cards--container">
           <ul class="cards--list">
 
             <li class="cards--list_item">
@@ -565,7 +594,7 @@
               <div class="card">
 
                 <div class="card--photo">
-                  <img src="" alt="Mini">
+                  <img src="assets/images/card-1.png" alt="Mini">
                 </div>
 
                 <div class="card--text_block">
@@ -600,7 +629,7 @@
               <div class="card">
 
                 <div class="card--photo">
-                  <img src="" alt="Standard">
+                  <img src="assets/images/card-3.png" alt="Standard">
                 </div>
 
                 <div class="card--text_block">
@@ -644,7 +673,7 @@
                 <div class="card">
   
                   <div class="card--photo">
-                    <img src="" alt="Full">
+                    <img src="assets/images/card-2.png" alt="Full">
                   </div>
   
                   <div class="card--text_block">
@@ -699,7 +728,7 @@
         </div>
       </section>  
 
-      <section class="section section--steps">
+      <section class="section steps">
         <h3 class="heading--third_level">How we are working</h3>
         <h2 class="heading--second_level heading--second_level-major">
           6 steps to the goal
@@ -822,20 +851,22 @@
         </div>
       </section>
 
-      <section class="section section--team">
-        <h2 class="heading--second_level heading--second_level-minor">
-          Our Team
-        </h2>
-
-        <div class="heading_icon">
-          <img src="" alt="Our Team">
+      <section class="section team">
+        <div class="heading_container">
+          <h2 class="heading--second_level heading--second_level-minor">
+            Our Team
+          </h2>
+  
+          <div class="heading_icon">
+            <img src="assets/images/team.svg" alt="Our Team">
+          </div>
         </div>
 
         <p class="team--text">
           Our team has helped to become happier for more than 500 families and we are not going to stop
         </p>
 
-        <div class="cards_container">
+        <div class="cards--container">
           <ul class="cards--list">
 
             <li class="cards--list_item">
@@ -920,20 +951,22 @@
         </p>
       </section>  
 
-      <section class="section section--clients">
-        <h2 class="heading--second_level heading--second_level-minor">
-          Our clients
-        </h2>
-
-        <div class="heading_icon">
-          <img src="" alt="Our Clients">
+      <section class="section clients">
+        <div class="heading_container">
+          <h2 class="heading--second_level heading--second_level-minor">
+            Our clients
+          </h2>
+  
+          <div class="heading_icon">
+            <img src="assets/images/handshake-icon.svg" alt="Our Clients">
+          </div>
         </div>
 
         <p class="team--text">
           80% of our customers recommend us to their friends and family.
         </p>
 
-        <div class="cards_container">
+        <div class="cards--container">
           <ul class="cards--list">
 
             <li class="cards--list_item">
@@ -1044,7 +1077,7 @@
         </p>
       </section>  
 
-      <section class="section section--questions">
+      <section class="section questions">
         <fieldset class="form_container">
 
           <legend class="form_heading">
@@ -1070,7 +1103,7 @@
         </fieldset>
       </section>
 
-      <section class="section section--location">
+      <section class="section location">
         <p class="heading--second_level heading--second_level-major">
           Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel +7 (928) 768 32 29
         </p>
